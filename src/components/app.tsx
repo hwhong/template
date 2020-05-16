@@ -1,7 +1,12 @@
 import * as React from "react";
+import Builder from "../builder/components/builder";
+import Actions from "../builder/components/actions";
 
-export interface IAppProps {}
-
-export default function IApp(props: IAppProps) {
-  return <h1>Hello Typescript!</h1>;
+export default function App() {
+  return (
+    <>
+      <Builder />
+      <Actions />
+    </>
+  );
 }
